@@ -10,8 +10,8 @@ import com.ugurhmz.model._01OneToOne.FingerPrint;
 import com.ugurhmz.model._01OneToOne.Person;
 import com.ugurhmz.model._02ManyToMany.Author;
 import com.ugurhmz.model._02ManyToMany.Book;
-import com.ugurhmz.model._03ManyToOne.City;
-import com.ugurhmz.model._03ManyToOne.Country;
+import com.ugurhmz.model._04OneToMany.City;
+import com.ugurhmz.model._04OneToMany.Country;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -30,9 +30,10 @@ public class HibernateUtil {
             //cfg.addAnnotatedClass(FingerPrint.class);
            // cfg.addAnnotatedClass(Author.class);
            // cfg.addAnnotatedClass(Book.class);
+           // cfg.addAnnotatedClass(Country.class);
+            //cfg.addAnnotatedClass(City.class);
             cfg.addAnnotatedClass(Country.class);
             cfg.addAnnotatedClass(City.class);
-
 
             //cfg.addAnnotatedClass(FirstEntity.class);
 
