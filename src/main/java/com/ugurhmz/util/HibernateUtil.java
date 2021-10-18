@@ -8,6 +8,8 @@ package com.ugurhmz.util;
 import com.ugurhmz.model.FirstEntity;
 import com.ugurhmz.model._01OneToOne.FingerPrint;
 import com.ugurhmz.model._01OneToOne.Person;
+import com.ugurhmz.model._02ManyToMany.Author;
+import com.ugurhmz.model._02ManyToMany.Book;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -22,9 +24,10 @@ public class HibernateUtil {
         try {
             Configuration cfg = new Configuration();
 
-            cfg.addAnnotatedClass(Person.class);
-            cfg.addAnnotatedClass(FingerPrint.class);
-
+            //cfg.addAnnotatedClass(Person.class);
+            //cfg.addAnnotatedClass(FingerPrint.class);
+            cfg.addAnnotatedClass(Author.class);
+            cfg.addAnnotatedClass(Book.class);
 
 
             //cfg.addAnnotatedClass(FirstEntity.class);
