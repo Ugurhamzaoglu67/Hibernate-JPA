@@ -13,6 +13,7 @@ import javax.persistence.*;
 public class FirstEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator(name="seq", sequenceName="FIRST_TABLE_SEQ_ID", initialValue = 1,allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
     private Long id;
 }
