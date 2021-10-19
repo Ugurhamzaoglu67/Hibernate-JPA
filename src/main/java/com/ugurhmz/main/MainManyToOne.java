@@ -15,9 +15,12 @@ public class MainManyToOne {
 
         City city = new City();
         city.setName("Dublin");
+        city.setCountry(country);
 
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
+
+        session.merge(country);
 
         transaction.commit();
     }
