@@ -1,10 +1,0 @@
-
-S	java:S1063"9Replace this use of System.out or System.err by a logger.(Ï×¹£øÿÿÿÿ
-M	java:S1064"9Replace this use of System.out or System.err by a logger.(›×ƒ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µŸÕý
-`
-java:S22593"EA "NullPointerException" could be thrown; "person1" is nullable here.(Ï×¹£øÿÿÿÿ
-[
-java:S22594"FA "NullPointerException" could be thrown; "fingerP2" is nullable here.(›×ƒ
-`
-java:S2095"EUse try-with-resources or close this "Session" in a "finally" clause.(íÊ‹ƒúÿÿÿÿ
